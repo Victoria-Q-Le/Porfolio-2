@@ -264,5 +264,5 @@ h3{font-size: var(--fs-h3)}
 
 .portflio {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
