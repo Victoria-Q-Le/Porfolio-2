@@ -171,18 +171,25 @@ header{
 }
 
 .hambuger{
+  display: block;
+  position: relative;
+}
+
+.hambuger
+.hambuger::before,
+.hambuger::after{
   background: var(--clr-dark);
   width: 2em;
   height: 3px;
   border-radius: 1em;
-  display: block;
-  position: relative;
 }
 
 .hambuger::before,
 .hambuger::after{
   content: '';
   position: absolute;
+  left: 0;
+  right: 0;
 }
 
 /* Intro */
