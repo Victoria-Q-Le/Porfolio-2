@@ -175,13 +175,14 @@ header{
   position: relative;
 }
 
-.hambuger
+.hambuger,
 .hambuger::before,
 .hambuger::after{
   background: var(--clr-dark);
   width: 2em;
   height: 3px;
   border-radius: 1em;
+  transition: transform 250ms ease-in-out;
 }
 
 .hambuger::before,
@@ -191,6 +192,9 @@ header{
   left: 0;
   right: 0;
 }
+
+.hamburger::before {top: 6px;}
+.hamburger::after {bottom: 6px;}
 
 /* Intro */
 .intro {
