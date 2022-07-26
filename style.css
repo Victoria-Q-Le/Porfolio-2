@@ -170,14 +170,29 @@ header{
   color: var(--clr-accent);
 }
 
-.hambuger{
+.nav-toggle {
+  padding: 0.5em;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  z-index: 100;
+}
+
+.nav-open{
+  background: red;
+}
+
+.hamburger{
   display: block;
   position: relative;
 }
 
-.hambuger,
-.hambuger::before,
-.hambuger::after{
+.hamburger,
+.hamburger::before,
+.hamburger::after {
   background: var(--clr-dark);
   width: 2em;
   height: 3px;
